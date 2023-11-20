@@ -1,1 +1,1 @@
-export const DB_NAME = "MERN-PROJECT"
+export const DB_NAME = "portfolio"
