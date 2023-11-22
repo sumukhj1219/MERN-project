@@ -19,3 +19,4 @@ const uploadToCloud = async (localFileUrl)=>{
 		return null;
 	}
 }
+export {uploadToCloud}

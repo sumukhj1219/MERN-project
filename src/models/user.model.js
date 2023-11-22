@@ -56,7 +56,7 @@ const useSchema = new Schema(
         return await bcrypt.compare(password, this.password);
 	}
 
-	userSchema.methods.generateAccessToken = function(){
+	useSchema.methods.generateAccessToken = function(){
 		return jwt.sign(
 			{
 				_id: this._id,
@@ -71,7 +71,7 @@ const useSchema = new Schema(
 		)
 	}
 
-	userSchema.methods.generateAccessToken = function(){
+	useSchema.methods.generateAccessToken = function(){
 		return jwt.sign(
 			{
 				_id: this._id,
@@ -84,8 +84,8 @@ const useSchema = new Schema(
 	}
 
 
-	userSchema.methods.generateRefreshToken = function(){}
+	useSchema.methods.generateRefreshToken = function(){}
 
 
 
-export const User = mongoose.model("User", userSchema);
+export const User = mongoose.model("User", useSchema);
